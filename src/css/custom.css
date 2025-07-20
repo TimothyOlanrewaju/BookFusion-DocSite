@@ -1,30 +1,142 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
 
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+.navbar__brand {
+  position: relative;
+  width:129px
+}
+.navbar__logo {
+  height: 32px; 
+  width: 129px; 
+  max-height: 32px;
+  object-fit: contain; 
+}
+[data-theme='light'] .navbar__logo {
+  content: url('../../static/img/DarkLogo.png'); 
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+[data-theme='dark'] .navbar__logo {
+  content: url('../../static/img/lightLogo.png'); 
+}
+
+.brand-darkblue{
+  background-color: #2C7AFF !important;
+}
+
+/* Add this to your src/css/custom.css file */
+
+/* Target the homepage specifically */
+.homepage {
+  background: linear-gradient(90deg, #2C7AFF 0%, #15A6FF 50%, #00D2FF 100%);
+  min-height: 100vh;
+}
+
+/* Alternative: Target the main wrapper on homepage */
+/* [data-theme] .homepage .main-wrapper {
+  background: linear-gradient(100deg, #2C7AFF 0%, #15A6FF 50%, #00D2FF 100%);
+  min-height: calc(100vh - var(--ifm-navbar-height));
+} */
+
+/* Ensure content is readable on the gradient */
+.homepage .hero__title {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.homepage .hero__subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Style buttons to work well with the gradient */
+.homepage .button--primary {
+  background: linear-gradient(145deg, #1f2354, #15193c); /* subtle gradient */
+  padding: 1rem 2rem; /* more horizontal space for breathing room */
+  margin: 2px 0px 0px 0px;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 1.25rem; /* bigger, readable text */
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.homepage .button--primary:hover {
+  background: #00D2FF;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Optional: Add some animation to the gradient */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.left{
+  flex: 1;
+}
+
+.right{
+  flex: 1;
+}
+
+/* Typewriter Effect Styles */
+.typewriter-cursor {
+  animation: blink 1s infinite;
+  font-weight: normal;
+  color: white;
+}
+
+@keyframes blink {
+  0%, 50% { 
+    opacity: 1; 
+  }
+  51%, 100% { 
+    opacity: 0; 
+  }
+}
+
+.typewriter-text {
+  color: #00D2FF; /* Highlight color for the changing words */
+  font-weight: bold;
+}
+
+/* Hero title styling for typewriter */
+.typewriter-hero {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .typewriter-hero {
+    font-size: 1.8rem;
+  }
+}
+
+/* Optional: Add subtle glow effect to the changing words */
+.typewriter-text {
+  text-shadow: 
+    0 0 10px rgba(0, 210, 255, 0.5),
+    0 2px 4px rgba(0, 0, 0, 0.3);
 }

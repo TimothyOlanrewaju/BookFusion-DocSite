@@ -2,42 +2,49 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import TypewriterEffect from '../components/TypewriterEffect';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+function HeroSection() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+    <div className='parent'>
+      <div className='left'>
+        <h1 className="hero__title">
+          <span><TypewriterEffect className="typewriter-hero" /></span>
+        </h1>
       </div>
-    </header>
-  );
+      <div className='right'>
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
+    <video
+      style={{
+        width: "100%",
+        maxWidth: "500px",
+        height: "auto",
+        borderRadius: "12px",
+        boxShadow: "0 10px 30px rgba(0, 0, 0, 0.3)"
+      }}
+      controls
+      poster='/img/thumbnail.png'
+    >
+      <source src="/videos/BookFusion Introduction Video.mp4" type="video/mp4" />
+    </video>
+  </div>
+</div>
+    </div>
+  )
 }
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      title={`${siteConfig.title}`}>
+        <div className='homepage'>
+          <HeroSection/>
+        </div>
     </Layout>
   );
 }
