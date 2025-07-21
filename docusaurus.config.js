@@ -143,7 +143,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} BookFusion, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} BookFusion`,
       },
       prism: {
         theme: prismThemes.github,

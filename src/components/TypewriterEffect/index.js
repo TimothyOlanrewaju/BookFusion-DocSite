@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Link from '@docusaurus/Link';
 
 const TypewriterEffect = () => {
   const words = ['Reading!', 'Knowledge!', 'Learning!', 'Research!'];
@@ -90,9 +91,9 @@ const TypewriterEffect = () => {
         any time and any where. Easily, upload, organize, read, share and sync your eBooks with BookFusion.
       </p>
       <div>
-        <button className='button--primary'>
+        <Link className='button--primary' to="/docs/introduction/what-is-bookfusion">
             Get Started!
-        </button>
+        </Link>
       </div>
 
       <style jsx>{`
