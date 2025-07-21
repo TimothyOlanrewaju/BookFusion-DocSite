@@ -11,7 +11,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'BookFusion',
-  // tagline: 'Dinosaurs are cool',
   favicon: 'img/Transparent Logo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -38,7 +37,21 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'fr', 'fa'],
+        localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+      fr: {
+        label: 'Français',
+        direction: 'ltr',
+      },
+      ar: {
+        label: 'العربية',
+        direction: 'rtl',
+      },
+    },
   },
 
   presets: [
@@ -85,6 +98,10 @@ const config = {
           src: 'img/bookfusion.png',
         },
         items: [
+           {
+          type: 'localeDropdown',
+          position: 'right',
+        },
           // {
           //   type: 'docSidebar',
           //   sidebarId: 'tutorialSidebar',
