@@ -184,12 +184,7 @@ const TypewriterEffect = () => {
       margin: '0 auto'
     }}>
       {/* Main heading with typewriter effect */}
-      <div style={{
-        fontSize: 'clamp(1rem, 5vw, 3rem)', 
-        fontWeight: 'bold',
-        marginBottom: '2rem',
-        lineHeight: '1.2'
-      }}>
+      <div className='hero_header'>
         <Translate
           id="typewriter.heading.makeTheMost"
           description="First part of the main heading">

@@ -29,7 +29,7 @@ function HeroSection() {
               description: 'Aria label for the introduction video'
             })}
           >
-            <source src="/videos/BookFusion Introduction Video.mp4" type="video/mp4" />
+            <source src="/videos/BookFusion-Introduction-Video.mp4" type="video/mp4" />
             <Translate
               id="homepage.video.notSupported"
               description="Message shown when video is not supported">
