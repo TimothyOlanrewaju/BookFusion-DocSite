@@ -1,4 +1,40 @@
 {
+    "homepage.title": {
+    "message": "BookFusion",
+    "description": "The title of the homepage"
+  },
+  "homepage.video.ariaLabel": {
+    "message": "Vidéo d'introduction BookFusion",
+    "description": "Aria label for the introduction video"
+  },
+  "homepage.video.notSupported": {
+    "message": "Votre navigateur ne supporte pas la balise vidéo.",
+    "description": "Message shown when video is not supported"
+  },
+  "typewriter.word.reading": {
+    "message": "Lecture !"
+  },
+  "typewriter.word.knowledge": {
+    "message": "Connaissance !"
+  },
+  "typewriter.word.learning": {
+    "message": "Apprentissage !"
+  },
+  "typewriter.word.research": {
+    "message": "Recherche !"
+  },
+  "typewriter.heading.makeTheMost": {
+    "message": "Tirez le Meilleur Parti de Votre",
+    "description": "First part of the main heading"
+  },
+  "typewriter.description": {
+    "message": "Possibilités illimitées avec toute votre collection d'eBooks accessible sur n'importe quel appareil, à tout moment et partout. Téléchargez, organisez, lisez, partagez et synchronisez facilement vos eBooks avec BookFusion.",
+    "description": "Main description text about BookFusion"
+  },
+  "typewriter.button.getStarted": {
+    "message": "Commencer !",
+    "description": "Get started button text"
+  },
   "theme.ErrorPageContent.title": {
     "message": "Cette page a planté.",
     "description": "The title of the fallback page when the page crashed"

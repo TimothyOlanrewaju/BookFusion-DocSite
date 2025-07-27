@@ -8,15 +8,15 @@
     "description": "The label for category Introduction in sidebar docs"
   },
   "sidebar.docs.category.Smart Queries & Smart Shelves": {
-    "message": "Smart Queries & Smart Shelves",
+    "message": "Requêtes intelligentes et étagères intelligentes",
     "description": "The label for category Smart Queries & Smart Shelves in sidebar docs"
   },
   "sidebar.docs.category.Smart Queries": {
-    "message": "Smart Queries",
+    "message": "Requêtes intelligentes",
     "description": "The label for category Smart Queries in sidebar docs"
   },
   "sidebar.docs.category.Smart Shelves": {
-    "message": "Smart Shelves",
+    "message": "Étagères intelligentes",
     "description": "The label for category Smart Shelves in sidebar docs"
   }
 }
