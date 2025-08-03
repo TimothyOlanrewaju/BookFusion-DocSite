@@ -31,20 +31,12 @@ const sidebars = {
     {
       type: 'category',
       label: 'Smart Queries & Smart Shelves',
-      link: {
-            type: 'doc',
-            id: 'smart-queries-shelves/overview',
-          },
       items: [
         'smart-queries-shelves/overview',
         'smart-queries-shelves/why-it-matters',
         {
           type: 'category',
           label: 'Smart Queries',
-          link: {
-            type: 'doc',
-            id: 'smart-queries-shelves/smart-queries/what-are-smart-queries',
-          },
           items: [
             'smart-queries-shelves/smart-queries/what-are-smart-queries',
             'smart-queries-shelves/smart-queries/query-language',
@@ -56,10 +48,6 @@ const sidebars = {
         {
           type: 'category',
           label: 'Smart Shelves',
-          link: {
-            type: 'doc',
-            id: 'smart-queries-shelves/smart-shelves/what-are-smart-shelves',
-          },
           items: [
             'smart-queries-shelves/smart-shelves/what-are-smart-shelves',
             'smart-queries-shelves/smart-shelves/creating-smart-shelf',

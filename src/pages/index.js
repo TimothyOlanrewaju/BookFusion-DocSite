@@ -1,4 +1,5 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl'; 
 import Layout from '@theme/Layout';
 import TypewriterEffect from '../components/TypewriterEffect';
 import Translate, {translate} from '@docusaurus/Translate';
@@ -22,14 +23,14 @@ function HeroSection() {
               boxShadow: "0 10px 30px rgba(0, 0, 0, 0.3)"
             }}
             controls
-            poster='/img/thumbnail.png'
+            poster={useBaseUrl('/img/thumbnail.png')} 
             aria-label={translate({
               id: 'homepage.video.ariaLabel',
               message: 'BookFusion introduction video',
               description: 'Aria label for the introduction video'
             })}
           >
-            <source src="/videos/BookFusion-Introduction-Video.mp4" type="video/mp4" />
+            <source src={useBaseUrl('/videos/BookFusion-Introduction-Video.webm')} type="video/webm" /> 
             <Translate
               id="homepage.video.notSupported"
               description="Message shown when video is not supported">
